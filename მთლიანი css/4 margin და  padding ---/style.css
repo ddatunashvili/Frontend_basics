@@ -1,0 +1,15 @@
+.cont{
+   width: 500px;
+   height: 600px;
+   border: 2px solid black;
+
+}
+.item{
+   width: 100px;
+   height: 100px;
+   background: red;
+/* გარე საზღვარი */
+   margin: 10px;
+/* შიდა საზღვარი */
+   padding: 10px;
+}

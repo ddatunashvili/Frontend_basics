@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*
+ფუნქვიაში იწერება მეთოდები
+გამოძახების ადგილს არ აქვს მნიშვნელობა
+
+*/
+// ------------------------------------------------------------
+// დაბეჭდე სახელი
+function name(name){
+   // ბეჭდვა
+   console.log(name);
+}
+name('დავითი');
+// პარამეტი n value ს გადაცემა
+function nam(n,a){
+   // ბეჭდვა
+   console.log(n,'',a);
+}
+nam('დავითი',22);
+// default დამატებითი პარამეტრები ....more ს მიანიჭვა ყველა სხვა დამატებითი ველიუები
+function print(name, ...more){
+   document.write(name,' ',more)
+}
+print('david',1,2,4,5,6,7,8,9,' კარგი გეყოფა ')
+// გლობალური და შიდა
+function test() {
+   // შიდა ცვლადი
+   var num=200;
+   console.console.log(num);
+}
+// გლობალური ცვლადი
+var time='22:00';
+function tim() {
+   // იცვლება
+   time=1;
+}
+tim()
+console.log(time);
+// შექმნის ხერხები
+// stdn
+function f() {
+   console.log('hello');
+}
+f()
+// var func
+var f2=function() {
+   console.log('გამარჯობა');
+}
+f2()
+//  arrpw func
+f3 =() =>{
+   console.log('hola');
+}
+f3()
+// ფუნქციაში ფუნქციის გამოძახება
+f5=()=>{
+   f();
+}
+f5()
+
+
+
+
+
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <!--                               -->
+      <input type="text" id="input"/>
+      <button id="btn">save</button>
+      <h1 id="txt"></h1>
+
+      <!--                               -->
+
+      <script type="text/javascript">
+/*
+ლოკალური მეხსიერება ინახება ქეშად ბრაუზერში
+key და მნიშვნელობა
+
+application --> localStorage --> file://
+*/
+// -----------------------------------------------------------
+   // წვდომა
+var inp=document.getElementById('input');
+var btn=document.getElementById('btn');
+var txt=document.getElementById('txt')
+   // click
+btn.addEventListener('click', function () {
+   // txt.innerHTML = inp.value; // გამოიტანე
+   // შენახვა სთორეიჯში
+   localStorage.setItem('name', inp.value);
+   // რეფრეშის თავიდან აცილება
+   // კლიკზე გადამამისამართე თავიისთავზე
+   window.location ='მონაცემების_შენახვა.html';
+   // ----------------------------------------------
+
+})
+      // გამოიტანე სთორეიჯიდან სახელით ველიუ
+txt.innerHTML = localStorage.getItem('name');
+      // წაშალე სთორეიჯიდან სახელით ველიუ
+// txt.innerHTML=localStorage.removeItem('name');
+
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

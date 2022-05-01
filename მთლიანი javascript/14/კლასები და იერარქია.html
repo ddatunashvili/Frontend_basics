@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*
+
+*/
+// -----------------------------------------------------------
+// კლასის შექმნა
+class user{
+   // მეთოდები
+   print(name){
+      console.log(name);
+   }
+}
+// ობიექტის მინიჭება
+var User= new user();
+// მისი მეთოდის გამოძახება
+User.print('დავითი');
+
+   // კონსტრუქტორი
+class T{
+   // ინიციალიზაცია
+   constructor(Name,Age){
+      this.name= Name;
+      this.age=Age;
+   }
+   print(){
+      console.log(this.name,this.age);
+   }
+}
+var davit = new T('david',22);
+davit.print()
+   // იერარქია მემკვიდრეობა
+function f1() {
+   return class User {
+      Moderator() {
+         console.log('Moderator');
+      }
+   }
+}
+// ახალი კლასი გახადე შვილობილი f1 ის
+class  second extends f1() {
+}
+var sec=new  second();
+sec.Moderator()
+
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*
+
+
+*/
+// -----------------------------------------------------------
+   // ასინქრონული ფუნქცია
+function f1() {
+   return new Prom((resolve)=>{
+      setTimeout(()=>{
+         console.log('called');
+      }, 1000);
+   })
+}
+//  ასინქრონული ელოდება წინა ფუნქციის შედეგს
+async function f2() {
+   console.log('..loading');
+   var result = await f1();
+   // ლოდინის მერე უბრალოდ დაბეჭდოს
+   console.log(result);
+}
+f2();
+
+
+
+
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*
+
+
+*/
+// -----------------------------------------------------------
+var user =5;
+var prom= new Promise((resolve,reject) =>{
+   if (user==5){
+      resolve('online');
+   }else {
+      reject('offline');
+   }
+});
+// resolve
+prom.then((msg)=>{
+   console.log(msg);
+});
+// reject
+prom.catch((error)=>{
+   console.log(error);
+})
+
+
+
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

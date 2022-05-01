@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*
+გამოვიძახო ფუნქცია ჩატვირთამდე
+*/
+// ------------------------------------------------------------
+function func() {
+   console.log('hello');
+}
+// ტაიმაუტი გარკვეული დროით
+setTimeout(func,2000) // ორი წამი = 2000 მილიწამი
+   // მეორე ხერხი
+setTimeout( () => {
+   console.log('მეორე მეთოდი');
+}, 2000);
+   // ინტერველი რამდენხანში
+setInterval(func, 3000) // ყოველ 3 წამში გამოიძახებს
+// ასევე
+var n=0;
+function call() {
+   n++;
+   console.log(n);
+}
+setInterval(call, 1000) // ყოველწამს
+   // დროის გასვლის დაწესება
+var interval = setInterval (test, 100)
+var time=0;
+function test() {
+   if (time > 30){ // 30 ცდა დედლაინი
+      clearInterval(interval)
+      alert('timeout');
+   }
+   time++;
+   console.log(time);
+}
+   // return გაყინავს კოდს
+function test() {
+   return console.log('hello');
+   console.log('hello');
+}
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

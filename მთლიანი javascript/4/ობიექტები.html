@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+   </head>
+   <body>
+      <script type="text/javascript">
+/*
+ობიექტი მონაცემების დასახარისხებლად
+ჩაშენებული ობიექტები
+*/
+// ------------------------------------------------------------
+var user={
+   name: 'david',
+   age:22,
+   address:"tbilisi"
+}
+console.log(user);
+// ობიექტის ამოღება
+document.write('სახელი: ',user.name,' ასაკი: ',user.age);
+// ობიექტი ობიექტში
+var object={
+   inobject:{
+      name:'თბილისი'
+   }
+}
+document.write('<br>ჩაშენებული ობიექტი',object.inobject.name);
+
+// ------------------------------------------------------------
+      </script>
+   </body>
+</html>

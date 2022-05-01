@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+.txt{
+   font-size: 60px;
+   color: red;
+   font-family: 'Chelsea Market', cursive;
+}
+#txt{
+   font-size: 50px;
+   color: green;
+   font-family: "BPG Nino Mtavruli", sans-serif;
+}
